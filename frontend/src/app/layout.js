@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import '../../styles/global.css';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import Buttom from './components/common/Buttom';

@@ -1,13 +1,15 @@
 import { Pacifico } from 'next/font/google'
+import Link from 'next/link';
+
  
 const pacifico = Pacifico({ subsets: ['latin'],weight:'400' })
 
 
 export default function Header() {
     return (
-        <nav className="navbar navbar-expand-lg " data-bs-theme="dark" style={{'backgroundColor':'#ffd6f3'}}>
+        <nav className="navbar navbar-expand-lg hms-bg-normal" data-bs-theme="dark" >
             <div className="container">
-            <a className={`navbar-brand ${pacifico.className} fs-4`} style={{color:'#a945c9'}} href="#">HMS</a>
+            <Link className={`navbar-brand ${pacifico.className} fs-4 hms-bg-light`}  href="/">HMS</Link>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -15,7 +17,7 @@ export default function Header() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <a className="nav-link text-white fw-semibold" aria-current="page" href="#">Home</a>
+                            <Link className="nav-link text-white fw-semibold" aria-current="page" href="/">Home</Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-white fw-semibold" href="#">Gallery</a>
@@ -30,7 +32,7 @@ export default function Header() {
                             <a className="nav-link text-white fw-semibold d" href="#" >Contact</a>
                         </li>
                         <li className="nav-item">
-                            <a className="btn   mt-1 text-white" style={{'backgroundColor':'#a945c9'}} href="#" >Book Event</a>
+                            <a className="btn   mt-1 text-white hms-bg-dark"  href="#" >Book Event</a>
                         </li>
                     </ul>
                 </div>
