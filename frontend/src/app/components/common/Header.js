@@ -32,7 +32,7 @@ export default function Header() {
                             <a className="nav-link text-white fw-semibold d" href="#" >Contact</a>
                         </li>
                         <li className="nav-item">
-                            <a className="btn   mt-1 text-white hms-bg-dark"  href="#" >Book Event</a>
+                            <a className="btn   mt-1 text-white hms-bg-dark fw-semibold"  href="#" >Book Event</a>
                         </li>
                     </ul>
                 </div>
